@@ -95,6 +95,7 @@ input {
     align-items: center;
   }
   img {
+    min-width: 367px;
     width: 400px;
   }
 }
