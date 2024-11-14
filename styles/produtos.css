@@ -1,0 +1,26 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+
+.cardItem {
+  border: solid 2px #e2f109;
+  border-radius: 20px;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.cardImg {
+  float: left;
+  width: 150px;
+  height: auto;
+}
+
+.cardInfo {
+  text-align: center;
+}
+
