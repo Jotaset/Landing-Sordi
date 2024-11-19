@@ -49,3 +49,8 @@ article {
   
 }
 
+@media (max-width: 550px) {
+  img {
+    width: 300px;
+  }
+}
