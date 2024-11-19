@@ -1,13 +1,51 @@
+body {
+  background: #000011;
+  color: white;
+  font-family: poppinsregular;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  flex-direction: column;
+  line-height: 10px;
+  font-size: 13px;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+a {
+  color: white;
+  border: #e2f109 2px solid;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: #EE5A2C;
+  transition: 0.3s all;  
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
+  gap: 10px;
 }
 
 .cardItem {
   border: solid 2px #e2f109;
   border-radius: 20px;
   display: flex;
-  width: 350px;
+  width: 300px;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -18,9 +56,32 @@ main {
   float: left;
   width: 150px;
   height: auto;
+  border-radius: 20px;
 }
 
 .cardInfo {
   text-align: center;
 }
 
+
+
+
+@media(max-width: 550px) {
+
+  li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .cardImg {
+    border-radius: 20px;
+  }
+}
