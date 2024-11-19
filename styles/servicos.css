@@ -50,6 +50,14 @@ article {
 }
 
 @media (max-width: 550px) {
+  article {
+    width: 367px;
+  }
+
+  .serviceCard {
+    width: 367px;
+  }
+
   img {
     width: 300px;
   }
