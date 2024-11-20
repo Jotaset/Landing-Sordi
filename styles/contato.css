@@ -4,6 +4,10 @@ main {
   align-items: center;
 }
 
+.socialImg {
+  width: 400px;
+}
+
 .socialTitle {
   font-size: 20px;
   text-align: center;
