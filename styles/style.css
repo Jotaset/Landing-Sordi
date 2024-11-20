@@ -16,6 +16,8 @@ header {
 #title {
   flex-direction: column;
   line-height: 10px;
+  font-size: 13px;
+  font-family: poppinsregular;
 }
 
 li {
@@ -25,11 +27,12 @@ li {
 
 a {
   color: white;
-
+  border: transparent 2px solid;
+  border-radius: 10px;
 }
 
 a:hover {
-  color: #EE5A2C;
+  border-bottom: #e2f109 solid 2px;
   transition: 0.3s all;  
 }
 
@@ -51,7 +54,7 @@ h2 {
 }
 
 span {
-  color: #EE5A2C;
+  color: #e2f109;
 }
 
 p {
@@ -80,7 +83,7 @@ input {
 
 .btn {
   border: solid transparent 2px;
-  background-color: #DA5C36;
+  background-color: #e2f109;
   width: 50%;
   margin-left: 25%;
 }
@@ -94,9 +97,17 @@ input {
     gap: 30px;
     align-items: center;
   }
-  img {
-    min-width: 367px;
-    width: 400px;
+
+  a {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 30px
+  }
+  
+  .initImg {
+    width: 300px;
   }
 }
 

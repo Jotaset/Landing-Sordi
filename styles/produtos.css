@@ -26,12 +26,12 @@ li {
 
 a {
   color: white;
-  border: #e2f109 2px solid;
+  border: transparent 2px solid;
   border-radius: 10px;
 }
 
 a:hover {
-  color: #EE5A2C;
+  border-bottom: #e2f109 solid 2px;
   transition: 0.3s all;  
 }
 
@@ -39,6 +39,8 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   gap: 10px;
+  justify-content: center;
+  
 }
 
 .cardItem {
@@ -63,7 +65,13 @@ main {
   text-align: center;
 }
 
-
+button {
+  padding: 5px;
+  border-radius: 10px;
+  border: transparent solid 2px;
+  background-color: #e2f109;
+  cursor: pointer;
+}
 
 
 @media(max-width: 550px) {

@@ -1,4 +1,16 @@
+a {
+  color: white;
+  border: transparent 2px solid;
+  border-radius: 10px;
+}
+
+a:hover {
+  border-bottom: #e2f109 solid 2px;
+  transition: 0.3s all;  
+}
+
 main {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -50,12 +62,21 @@ article {
 }
 
 @media (max-width: 550px) {
+
+
+    li {
+      display: inline-block;
+      margin: 10px;
+      font-size: 10px;
+    }
+
   article {
-    width: 367px;
+    width: 300px;
   }
 
   .serviceCard {
-    width: 367px;
+    width: 300px;
+    margin: 0 auto;
   }
 
   img {

@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialTitle {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+
+
+  .socialImg {
+    width: 150px;
+  }
+
+  .socialTitle {
+    font-size: 13px;
+  }
+}
