@@ -17,6 +17,7 @@ header {
   flex-direction: column;
   line-height: 10px;
   font-size: 13px;
+  font-family: poppinsbold;
 }
 
 li {
@@ -36,27 +37,29 @@ a:hover {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  gap: 10px;
-  justify-content: center;
+  
   
 }
 
 .cardItem {
-  border: solid 2px #e2f109;
-  border-radius: 20px;
-  display: flex;
-  width: 300px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  align-items: center;
+  display: none;
+  width: 70%;
+  height: auto;
+  border: #e2f109 solid 2px;
+border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardItem.active {
+  display: block;
 }
 
 .cardImg {
   float: left;
-  width: 150px;
+  width: 25%;
   height: auto;
   border-radius: 20px;
 }
@@ -71,6 +74,30 @@ button {
   border: transparent solid 2px;
   background-color: #e2f109;
   cursor: pointer;
+}
+
+#prev, #next {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #e2f109;
+  border: 1px solid #e2f109e9;
+  color: #000011;
+  font-size: x-large;
+  font-family: monospace;
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 9999px;
+}
+
+#prev {
+  left: 30px;
+}
+
+#next {
+  right: 30px;
 }
 
 
@@ -89,7 +116,28 @@ button {
     align-items: center;
   }
 
+  .cardItem {
+    margin-top: 50px;
+    padding-bottom: 15px;
+    }
   .cardImg {
+    width: 229px;
     border-radius: 20px;
+  }
+
+  .cardInfo {
+    justify-content: space-between;
+  }
+
+  #prev, #next {
+    width: 30px;
+  }
+
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
   }
 }

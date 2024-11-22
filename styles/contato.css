@@ -1,4 +1,6 @@
-
+#title {
+  font-family: poppinsbold;
+}
 main {
   display: flex;
   justify-content: center;

@@ -7,7 +7,7 @@ form.addEventListener('submit' , (event) => {
   const name = nameInput.value;
   const mensage = 'Olá, me chamo ' + name + ', vim pela landing page. Pode me ajudar?';
 
-  const whatsappUrl = 'https://api.whatsapp.com/send?phone=+5549999628768&text='+ mensage;
+  const whatsappUrl = 'https://api.whatsapp.com/send?phone=+5549999167404&text='+ mensage;
 
   window.open(whatsappUrl, '_blank');
 
