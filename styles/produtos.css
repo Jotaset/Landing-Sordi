@@ -36,17 +36,13 @@ a:hover {
   transition: 0.3s all;  
 }
 
-main {
-  
-  
-}
 
 .cardItem {
   display: none;
-  width: 70%;
+  width: 700px;
   height: auto;
   border: #e2f109 solid 2px;
-border-radius: 20px;
+  border-radius: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,11 +89,11 @@ button {
 }
 
 #prev {
-  left: 30px;
+  left: 28%;
 }
 
 #next {
-  right: 30px;
+  right: 28%;
 }
 
 
