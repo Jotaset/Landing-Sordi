@@ -37,22 +37,27 @@ a:hover {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  height: 100%;
+  display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
   
 }
 
 .cardItem {
   border: solid 2px #e2f109;
   border-radius: 20px;
-  display: flex;
+  display: none;
   width: 300px;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
   align-items: center;
+}
+
+.cardItem.active {
+  display: block;
 }
 
 .cardImg {
@@ -77,6 +82,15 @@ button {
 
 @media(max-width: 550px) {
 
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
   li {
     display: inline-block;
     margin: 10px;
@@ -85,12 +99,18 @@ button {
   
   main {
     display: flex;
-    flex-direction: column;
     gap: 15px;
     align-items: center;
   }
 
+  .cardItem {
+    width: 60%;
+    padding-bottom: 15px;
+    font-size: 13px;
+  }
+
   .cardImg {
     border-radius: 20px;
+    width: 100%;
   }
 }
