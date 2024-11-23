@@ -17,6 +17,7 @@ header {
   flex-direction: column;
   line-height: 10px;
   font-size: 13px;
+  font-family: poppinsbold;
 }
 
 li {
