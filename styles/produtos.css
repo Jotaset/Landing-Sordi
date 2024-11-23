@@ -43,10 +43,14 @@ main {
   justify-content: center;
   align-items: center;
   
+  
 }
 
 .cardItem {
-  border: solid 2px #e2f109;
+  display: none;
+  width: 700px;
+  height: auto;
+  border: #e2f109 solid 2px;
   border-radius: 20px;
   display: none;
   width: 300px;
@@ -62,7 +66,7 @@ main {
 
 .cardImg {
   float: left;
-  width: 150px;
+  width: 25%;
   height: auto;
   border-radius: 20px;
 }
@@ -77,6 +81,30 @@ button {
   border: transparent solid 2px;
   background-color: #e2f109;
   cursor: pointer;
+}
+
+#prev, #next {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #e2f109;
+  border: 1px solid #e2f109e9;
+  color: #000011;
+  font-size: x-large;
+  font-family: monospace;
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 9999px;
+}
+
+#prev {
+  left: 28%;
+}
+
+#next {
+  right: 28%;
 }
 
 
@@ -109,8 +137,29 @@ button {
     font-size: 13px;
   }
 
+  .cardItem {
+    margin-top: 50px;
+    padding-bottom: 15px;
+    }
   .cardImg {
+    width: 229px;
     border-radius: 20px;
     width: 100%;
+  }
+
+  .cardInfo {
+    justify-content: space-between;
+  }
+
+  #prev, #next {
+    width: 30px;
+  }
+
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
   }
 }
