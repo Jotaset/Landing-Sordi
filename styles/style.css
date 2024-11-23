@@ -89,6 +89,17 @@ input {
 }
 
 @media (max-width: 900px) {
+
+  
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+  
   main {
     display: flex;
     flex-direction: column-reverse;

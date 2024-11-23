@@ -64,6 +64,15 @@ article {
 @media (max-width: 550px) {
 
 
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+  
     li {
       display: inline-block;
       margin: 10px;
