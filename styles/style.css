@@ -42,8 +42,7 @@ h1 {
 
 main {
   display: flex;
-  margin-top: 50px;
-  gap: 30px;
+  gap: 20px;
 }
 
 h2 {
@@ -104,9 +103,9 @@ input {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    margin-top: 50px;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
+    text-align: center;
   }
 
   a {

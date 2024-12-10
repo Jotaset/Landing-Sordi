@@ -39,9 +39,9 @@ a:hover {
 main {
   height: 100%;
   display: flex;
-  gap: 10px;
   justify-content: center;
   align-items: center;
+  gap: 2px;
   
   
 }
@@ -56,6 +56,8 @@ main {
   gap: 10px;
   align-items: center;
   padding-bottom: 15px;
+  position: relative;
+  bottom: -20px;
 }
 
 .cardItem.active {
